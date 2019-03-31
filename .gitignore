@@ -1,0 +1,26 @@
+src/*.exe
+src/Zalem-Coin
+src/Zalem-Coind
+src/test_Zalem-Coin
+src/build.h
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.Zalem-Coin
+#compilation and Qt preprocessor part
+.qmake.stash
+Makefile
+Zalem-Coin-qt
+#resources cpp
+qrc_*.cpp
+#qt creator
+*.pro.user
+#mac specific
+.DS_Store
+build
+
+!src/leveldb/Makefile
