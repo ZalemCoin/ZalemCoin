@@ -305,34 +305,8 @@ unsigned int VRX_Retarget(const CBlockIndex* pindexLast, bool fProofOfStake)
     if (pindexLast->nHeight < scanheight+99)
         return bnVelocity.GetCompact(); // can't index prevblock
 
-    // Check for chain stall, allowing for min diff reset
-    // If the new block's timestamp is more than 2 * maximum target spacing
-    // then allow mining of a min-difficulty block.
-    if (GetAdjustedTime() > pindexLast->GetBlockTime() + (DSrateMAX * 2)) { // 9 minutes allow min-diff stall catch
-        // Min-diff activation after block xxxxxxx
-        if (pindexLast->GetBlockTime() > VRX_MDIFF) {
-            return bnVelocity.GetCompact(); // reset diff
-        }
-    }
-
-    // Only select last non-min-diff block when retargeting
-    // This negates a chain reset when a min-diff block is allowed
-    //
-    // Set min-diff check values
-    pindexNonMinDiff = GetLastBlockIndex(pindexLast, fProofOfStake); // Differentiate PoW/PoS prev block
-    bnNonMinDiff.SetCompact(pindexNonMinDiff->nBits);
-    // Min-diff index skip after block xxxxxxx
-    if (pindexLast->GetBlockTime() > VRX_MDIFF) {
-        // Check whether the selected block is min-diff
-        while(bnNonMinDiff.GetCompact() <= bnVelocity.GetCompact()) {
-            // Index backwards until a non-min-diff block is found
-            pindexNonMinDiff = pindexNonMinDiff->pprev;
-            bnNonMinDiff.SetCompact(pindexNonMinDiff->nBits);
-        }
-    }
-
-    // Log PoW/PoS prev block
-    BlockVelocityType = pindexNonMinDiff;
+    // Differentiate PoW/PoS prev block
+    BlockVelocityType = GetLastBlockIndex(pindexLast, fProofOfStake);
 
     // Run VRX threadcurve
     VRX_ThreadCurve(pindexLast, fProofOfStake);
