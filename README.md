@@ -89,7 +89,7 @@ cd ~; git clone https://github.com/ZalemCoin/ZalemCoin
 
 ### Build Zalem daemon
 ```
-cd ~; cd ~/ZalemCoin/src; chmod a+x obj; chmod a+x leveldb/build_detect_platform; chmod a+x secp256k1; chmod a+x leveldb; chmod a+x ~/ZalemCoin/src; chmod a+x ~/Zalem; make -f makefile.unix USE_UPNP=-; cd ~; cp -r ~/ZalemCoin/src/Zalem-Coind /usr/local/bin/Zalem-Coind;
+cd ~; cd ~/ZalemCoin/src; chmod a+x obj; chmod a+x leveldb/build_detect_platform; chmod a+x secp256k1; chmod a+x leveldb; chmod a+x ~/ZalemCoin/src; chmod a+x ~/ZalemCoin; make -f makefile.unix USE_UPNP=-; cd ~; cp -r ~/ZalemCoin/src/Zalem-Coind /usr/local/bin/Zalem-Coind;
 ```
 
 ### Create config file for daemon
@@ -150,7 +150,7 @@ The developer [mailing list](https://lists.linuxfoundation.org/mailman/listinfo/
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer Discord can be found at:
+Developer Discord can be found at: https://discord.gg/xP8JYM4
 
 Testing
 -------
