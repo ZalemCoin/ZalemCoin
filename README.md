@@ -9,7 +9,7 @@ What is the Zalem-Coin [ZLM] Blockchain?
 
 ### Overview
 This project aims to be a community driven, open source, fan made and operated 
-blockchain that aims to bring both fans and those who worked hard to make the "Alita - 
+blockchain that strives to bring both fans and those who worked hard to make the "Alita - 
 Battle Angel" experience/movie a reality, the excitement of 
 having your own blockchain and to stimulate interest in the story and support everyone involved. 
 We will be actively reaching out to those involved in the movie and of course the fans as well. 
