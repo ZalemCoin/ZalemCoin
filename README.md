@@ -1,15 +1,24 @@
 Zalem-Coin [ZLM] integration/staging tree
 =====================================
 
-http://zalem.chainpages.xyz/
+http://zalemcoin.chainpages.xyz/
 
 What is the Zalem-Coin [ZLM] Blockchain?
 ----------------------------------------
 *TODO: Update documentation regarding implemented tech as this section is out of date and much progress and upgrades have been made to mentioned sections...*
 
 ### Overview
-This blockchain was devised and created through the community for the community (replacing upon community request the old EndoV2 that this is swapping from) 
-The goal of this project is to become it's own Operating System for all platforms (As secure and user-friendly as Linux but as beautiful and graceful as Macintosh OS) 
+This project aims to be a community driven, open source, fan made and operated 
+blockchain that aims to bring both fans and those who worked hard to make the "Alita - 
+Battle Angel" experience/movie a reality, the excitement of 
+having your own blockchain and to stimulate interest in the story and support everyone involved. 
+We will be actively reaching out to those involved in the movie and of course the fans as well. 
+So make sure that you get your free Zalems in the hopes of launching your own Floating City!
+
+If you are affiliated in any way to Alita Battle Angel and would like to contact us please feel free 
+to reach out to us as we look forward to hearing from you and sending you some Zalems!  
+
+Visit our website linked above and navigate to the "Communiy" section for more resources!
 
 ### Blockchain Technology
 The Zalem [ZLM] Blockchain is an experimental smart contract platform protocol that enables 
